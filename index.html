@@ -134,16 +134,20 @@
             </div>
             <div id="form" class="popup_fon">
                 <div class="popup_win">
+                    <form id="sending" action="#" method="get">
                     <h3 class="popup_title">Как к Вам обращаться</h3>
-                    <input class="popup_input_txt" type="text" placeholder="Фамилия Имя Отчество">
+                    <input class="popup_input_txt" type="text" name="userName" value="" placeholder="Фамилия Имя Отчество">
                     <h3 class="popup_title">Укажите номер Вашего телефона</h3>
-                    <input class="popup_input_txt" type="phone" placeholder="телефон">
+                    <input class="popup_input_txt" type="tel" name="phone" value="" placeholder="телефон">
                     <h3 class="popup_title">Укажите Ваш электронный адрес</h3>
-                    <input class="popup_input_txt" type="email" placeholder="e-mail">
+                    <input class="popup_input_txt" type="email" name="email" value="" placeholder="e-mail">
                     <a class="popup_close" href="#form_close">Закрыть</a>
+                    <input type="submit" id="send">Отправить</input>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
+    <script src="./js/form.js"></script>
 </body>
 </html>
